@@ -5,7 +5,9 @@ function Counter() {
 
     return (
         <div>
-            <h1>Current count: {count}</h1>
+            <h1>Build in hooks</h1>
+            <h2>Set state</h2>
+            <h3>Current count: {count}</h3>
             <button onClick={()=> setCount(count+1)}>Increase</button>
             <button onClick={()=> setCount(count-1)}>Decrease</button>
         </div>

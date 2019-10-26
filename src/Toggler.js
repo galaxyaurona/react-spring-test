@@ -1,10 +1,16 @@
 import React from "react"
 import useToggle from "./hooks/useToggle"
-function Toggler(){
+function Toggler() {
     const [isSoundOn, toggleIsSoundOn] = useToggle(true);
     return (
-        <div onClick={toggleIsSoundOn}>{ isSoundOn ? "🔈" : "🔇"}</div>
+        <div>
+            <h2>
+                Custom hooks
+        </h2>
+            <p>Click icon to toggle</p>
+            <span style={{fontSize:'2em'}} onClick={toggleIsSoundOn}>{isSoundOn ? "🔈" : "🔇"}</span>
+        </div>
     )
 }
- 
+
 export default Toggler
